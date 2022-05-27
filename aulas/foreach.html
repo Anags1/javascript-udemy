@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    // var listaFuncionarios = ['Carla', 'Angelo', 'Miguel', 'José', 'Ruanda']
+    var listaFuncionarios = Array()
+    listaFuncionarios['Z'] = 'Carla',
+    listaFuncionarios[false] = 'Angelo',
+    listaFuncionarios[2] = 'Miguel',
+    listaFuncionarios[35] = 'José',
+    listaFuncionarios[-16] = 'Ruanda',
+    //forEach começa a partir de 0 (>Lembrar)
+
+    var funcaoDeCallback = function(valor, indice){
+      console.log(valor, indice);
+    }
+    funcaoDeCallback(5, 'A');
+
+    listaFuncionarios.forEach(funcaoDeCallback);
+    /* listaFuncionarios.forEach(function(valor, indice, array) {
+      //logica
+      console.log('indice ' + indice + ' | valor:' + valor)
+      if(valor === 'José'){
+        array[indice] = 'Um novo valor'
+      }
+      console.log(array)
+    }) */
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
